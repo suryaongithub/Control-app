@@ -1,0 +1,33 @@
+#:import get_color_from_hex kivy.utils.get_color_from_hex
+
+
+BoxLayout:
+    orientation: 'vertical'
+    padding: 10
+    spacing: 10
+
+    Label:
+        text: "Connect to headset?\nProceed?"
+        font_size: 16
+        halign: "center"
+        valign: "middle"
+        color: get_color_from_hex("#ffffff")
+        text_size: self.size
+
+    BoxLayout:
+        orientation: 'horizontal'
+        spacing: 10
+
+        Button:
+            text: "Yes"
+            font_size: 14
+            background_normal: ''
+            background_color: get_color_from_hex("#4f82a0ff")
+            on_press: app.proceed()
+
+        Button:
+            text: "No"
+            font_size: 14
+            background_normal: ''
+            background_color: get_color_from_hex("#4f82a0ff")
+            on_press: app.terminate()

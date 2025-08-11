@@ -1,0 +1,1 @@
+C:/Users/surya/AppData/Local/Microsoft/WindowsApps/python3.12.exe "c:/the programs/Control/main.py"

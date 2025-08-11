@@ -1,0 +1,57 @@
+#:import get_color_from_hex kivy.utils.get_color_from_hex
+
+BoxLayout:
+    orientation: 'vertical'
+    padding: 10
+    spacing: 10
+
+    BoxLayout:
+        orientation: 'horizontal'
+        size_hint_y: 1
+        padding: 3
+        spacing: 2
+
+        Button:
+            text: "Exit"
+            font_size: 15
+            background_normal: ''
+            background_color: get_color_from_hex("#4f82a0ff")
+            on_press: app.exit()
+            size_hint:4,1
+
+        Widget: 
+            size_hint_x: 3
+
+        Button:
+            text: "reload"
+            background_normal: ''
+            background_color: get_color_from_hex("#4f82a0ff")
+            on_press: app.reload()
+            size_hint:3,1
+            pos_hint: {'right': 1}
+        
+            
+            
+
+
+        
+    
+    BoxLayout:
+        orientation: 'horizontal'
+        size_hint_y: 3
+        padding: 3
+        spacing: 2
+
+        Button:
+            text: "Open"
+            font_size: 15
+            background_normal: ''
+            background_color: get_color_from_hex("#4f82a0ff")
+            on_press: app.open()
+
+        Button:
+            text: "Bluetooth config"
+            font_size: 15
+            background_normal: ''
+            background_color: get_color_from_hex("#4f82a0ff")
+            on_press: app.bluetooth(self)
