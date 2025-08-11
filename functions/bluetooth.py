@@ -15,8 +15,9 @@ class bluetooth(App):
         return Builder.load_file("bluetooth.kv")
     
     def proceed(self):
-        subprocess.run(r"C:\the programs\Control\Scripts\Listed.vbs", shell=True)
-        subprocess.run(r"C:\the programs\Control\Scripts\Open.bat", shell=True)
+        # subprocess.run(r"C:\the programs\Control\Scripts\Listed.vbs", shell=True)
+        # subprocess.run(r"C:\the programs\Control\Scripts\Open.bat", shell=True)
+        # Do something to connect to my bluetooth device, i have the mac address
         Window.close()
 
     def terminate(self):
